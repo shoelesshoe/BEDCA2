@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="css/loginRegister.css" rel="stylesheet" />
+    <title>Login</title>
+  </head>
+
+  <body class="vh-100">
+    <nav id="navbar"></nav>
+
+    <main class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col">
+          <div class="card">
+            <div class="row g-0">
+              <div class="col-md-5 col-lg-5 d-none d-md-block">  <!-- does not show img when on mobile -->
+                <img
+                  src="./images/sunset.jpg"
+                  alt="login form"
+                  class="h-100 img-fluid"
+                />
+              </div>
+              <div class="col-md-7 col-lg-7 d-flex align-items-center">
+                <div class="card-body p-4 p-lg-5 text-black">
+                  <form id="loginForm">
+                    <div class="d-flex align-items-center mb-3 pb-1">
+                      <span class="h1 fw-bold mb-0">Welcome Back!</span>
+                    </div>
+
+                    <h5 class="fw-normal mb-3 pb-3">
+                      Please Sign In To Continue
+                    </h5>
+
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="username">
+                        <i class="fa-solid fa-user"></i> Username
+                      </label>
+                      <input
+                        type="text"
+                        id="username"
+                        class="form-control form-control-lg"
+                        placeholder="sustainableUser123"
+                        required
+                      />
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="password">
+                        <i class="fa-solid fa-key"></i> Password
+                      </label>
+                      <input
+                        type="password"
+                        id="password"
+                        class="form-control form-control-lg"
+                        placeholder="Password"
+                        required
+                      />
+                    </div>
+
+                    <div class="pt-1 mb-4">
+                      <button class="btn btn-dark btn-lg btn-block" type="submit">
+                        Login
+                      </button>
+                    </div>
+
+                    <p class="mb-5 pb-lg-2">
+                      Don't have an account?
+                      <a href="register.html">Sign Up</a>
+                    </p>
+                  </form>
+                  <div id="warningCard" class="card border-danger mt-3 mb-3 d-none">
+                    <div class="card-body text-danger">
+                      <p id="warningText" class="card-text"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/queryCmds.js" type="text/javascript"></script>
+    <script src="js/getCurrentURL.js" type="text/javascript"></script>
+    <script src="js/loginUser.js" type="text/javascript"></script>
+    <script src="js/navbarFooterToggle.js" type="text/javascript"></script>
+  </body>
+</html>

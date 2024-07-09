@@ -1,0 +1,29 @@
+{
+  "name": "bed-ca2-shoelesshoe",
+  "version": "1.0.0",
+  "description": "BED CA2",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "init_tables": "node src/configs/createSchema.js && node src/configs/initTables.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ST0503-BED/bed-ca2-shoelesshoe.git"
+  },
+  "author": "Randal Hong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ST0503-BED/bed-ca2-shoelesshoe/issues"
+  },
+  "homepage": "https://github.com/ST0503-BED/bed-ca2-shoelesshoe#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.7.1",
+    "nodemon": "^3.0.3"
+  }
+}
